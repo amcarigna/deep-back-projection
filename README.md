@@ -32,8 +32,7 @@ but less so than a full filtered back projection.
 
 ### Data Generation
 Our intention is to build a neural network that takes input data that is pre-processed differently than other attempts. Our input data is comprised of 16 single-view back projections. These 16 projections were generated using the MATLAB function “iradon” with only a single angle for each projection. We will refer to these 16 projections as the 16 channels of our image. We generated both filtered and unfiltered channels in this way. Each image is 64x64 pixels. The dataset we generated consists of a training set containing 10,000 sets of 16 unfiltered channels and 10,000 sets of 16 filtered channels. For testing we generated an additional 500 sets of each.  
-We also generated sparse view sinograms (10,000 for training, 500 for testing) for com-
-parison with previous work that use neural networks that take sinograms as input.  
+We also generated sparse view sinograms (10,000 for training, 500 for testing) for comparison with previous work that use neural networks that take sinograms as input.  
 
 ### Neural Network
 Our neural network is convolutional with 20 hidden layers using a 3x3 kernel. Each hidden
@@ -72,7 +71,7 @@ destroyed during the filtering pre-processing that the network then had to learn
 to what the other network was learning.  
 
 ## Appendix: Code
-The code for our neural networks is contain in the following files:  
+The code for our neural networks is contain in the following files (coded with PyTorch):  
 - `MCB_code.py`
 - `FMCB_code.py`
 - `FCL_code.py`

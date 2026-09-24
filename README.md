@@ -1,6 +1,6 @@
 # Deep Back Projection
 
-Joint work with Max Ruby. Purdue University course project for BME 595.  
+Joint work with Max Ruby for Purdue University course project for BME 595.  
 
 ## Intro
 The topic of this project is to take a look at a problem in medical imaging reconstruction.
